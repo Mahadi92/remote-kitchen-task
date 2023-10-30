@@ -29,7 +29,7 @@ const ProductFrom: React.FC<PropsType> = ({ entityId }) => {
 
         <Col md={12}>
           <Form.Item label="Image" name="image">
-            <Select>
+            <Select defaultValue={"product-1"}>
               <Select.Option value={"product-1"}>
                 <div className='flex justify-start items-center gap-5'>
                   <span className='font-bold'>Product 1</span>
@@ -64,12 +64,19 @@ const ProductFrom: React.FC<PropsType> = ({ entityId }) => {
                   <Image src={`/assets/products/product-5.png`} width="40" height="40" alt=''/>
                 </div>
               </Select.Option>
+            
+              <Select.Option value={"product-6"}>
+                <div className='flex justify-start items-center gap-5'>
+                  <span className='font-bold'>Product 6</span>
+                  <Image src={`/assets/products/product-6.png`} width="40" height="40" alt=''/>
+                </div>
+              </Select.Option>
             </Select>
           </Form.Item>
         </Col>
 
         <Col md={24}>
-          <Form.Item label="Last Name" name="product_description">
+          <Form.Item label="Product Description" name="product_description">
             <Input.TextArea />
           </Form.Item>
         </Col>

@@ -18,10 +18,10 @@ const ProductPage = () => {
   return (
     <main className="px-10 py-2">
 
-      <div className='bg-white p-5 flex justify-end'>
+      <div className='glass p-5 flex justify-end'>
 
         <Button onClick={() => setIsOpenDrawer(true)} size="large" className='text-base '>
-            Add User
+            Add Product
         </Button>
 
         <Drawer

@@ -77,7 +77,7 @@ export const dashboardProductColumn: {}[] = [
           <Popover placement="bottomRight" title={""} overlayInnerStyle={{ padding: 0, boxShadow: "0px 0px 4px 0px #00000040" }} content={
             <List size="small" bordered={false}>
               <List.Item style={{ padding: 0 }}>
-                <Link href={`/dashboard?product=${record.id}`} className='pl-5 pr-9 py-1.5'>Edit</Link>
+                <Link href={`/dashboard?productId=${record?.id}`} className='pl-5 pr-9 py-1.5'>Edit</Link>
               </List.Item>
               <List.Item style={{ padding: 0 }}>
                 <Link href={"/settings"} className='pl-5 pr-9 py-1.5 text-sub-text hover:text-red-400'>Remove</Link>

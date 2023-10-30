@@ -9,7 +9,7 @@ const Navbar = () => {
     <header className='h-20 m-5 rounded-xl glass sticky top-0'>
       <div className='px-4 md:px-10 w-full h-full flex items-center justify-between'>
 
-        <h2 className='font-bold text-xl text-slate-700'>Remote Kitchen</h2>
+        <Link href="/" className='font-bold text-xl text-slate-700'>Remote Kitchen</Link>
 
           <Popover placement="bottomRight" title={""} overlayInnerStyle={{ padding: 0, boxShadow: "0px 0px 4px 0px #00000040" }} content={ProfileContent} trigger="click">
             <button className='flex items-center'>

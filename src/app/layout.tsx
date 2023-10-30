@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Josefin_Sans } from 'next/font/google'
 import '@/app/_styles/globals.scss'
 import Navbar from './_components/global/Navbar'
+import ProductContextProvider from '@/app/_context/ProductContextProvider'
 
 const josefin_sans = Josefin_Sans({ subsets: ['latin'] })
 
@@ -15,11 +16,14 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+
   return (
     <html lang="en">
       <body className={`${josefin_sans.className} bg-blue-50`}>
-        <Navbar />
-        {children}
+        <ProductContextProvider>
+          <Navbar />
+          {children}
+        </ProductContextProvider>
       </body>
     </html>
   )

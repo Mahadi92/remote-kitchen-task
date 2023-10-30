@@ -4,6 +4,9 @@ import Image from 'next/image';
 import { usePathname, useRouter } from 'next/navigation';
 import React, { useContext, useEffect, useState } from 'react';
 
+
+const { Option } = Select;
+
 interface PropsType {
   entityId: number | null;
   setIsOpenDrawer: any;
@@ -64,48 +67,48 @@ const ProductFrom: React.FC<PropsType> = ({ entityId, setIsOpenDrawer }) => {
 
         <Col md={12}>
           <Form.Item label="Image" name="image">
-            <Select defaultValue={"product-1"}>
-              <Select.Option value={"product-1"}>
+            <Select>
+              <Option value={"product-1"}>
                 <div className='flex justify-start items-center gap-5'>
                   <span className='font-bold'>Product 1</span>
                   <Image src={`/assets/products/product-1.png`} width="40" height="40" alt='' />
                 </div>
-              </Select.Option>
+              </Option>
 
-              <Select.Option value={"product-2"}>
+              <Option value={"product-2"}>
                 <div className='flex justify-start items-center gap-5'>
                   <span className='font-bold'>Product 2</span>
                   <Image src={`/assets/products/product-2.png`} width="40" height="40" alt='' />
                 </div>
-              </Select.Option>
+              </Option>
 
-              <Select.Option value={"product-3"}>
+              <Option value={"product-3"}>
                 <div className='flex justify-start items-center gap-5'>
                   <span className='font-bold'>Product 3</span>
                   <Image src={`/assets/products/product-3.png`} width="40" height="40" alt='' />
                 </div>
-              </Select.Option>
+              </Option>
 
-              <Select.Option value={"product-4"}>
+              <Option value={"product-4"}>
                 <div className='flex justify-start items-center gap-5'>
                   <span className='font-bold'>Product 4</span>
                   <Image src={`/assets/products/product-4.png`} width="40" height="40" alt='' />
                 </div>
-              </Select.Option>
+              </Option>
 
-              <Select.Option value={"product-5"}>
+              <Option value={"product-5"}>
                 <div className='flex justify-start items-center gap-5'>
                   <span className='font-bold'>Product 5</span>
                   <Image src={`/assets/products/product-5.png`} width="40" height="40" alt='' />
                 </div>
-              </Select.Option>
+              </Option>
 
-              <Select.Option value={"product-6"}>
+              <Option value={"product-6"}>
                 <div className='flex justify-start items-center gap-5'>
                   <span className='font-bold'>Product 6</span>
                   <Image src={`/assets/products/product-6.png`} width="40" height="40" alt='' />
                 </div>
-              </Select.Option>
+              </Option>
             </Select>
           </Form.Item>
         </Col>

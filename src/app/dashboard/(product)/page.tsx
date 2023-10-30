@@ -10,6 +10,9 @@ import { useSearchParams, usePathname, useRouter } from 'next/navigation';
 const ProductPage = () => {
 
   const { productData } = useContext(ProductContext);
+
+
+  console.log(`🚀 ~ productData:`, productData)
   
   const router = useRouter()
   const pathname = usePathname()
